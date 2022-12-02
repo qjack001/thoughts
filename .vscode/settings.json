@@ -1,0 +1,22 @@
+{
+	"editor.formatOnSave": false,
+	"eslint.validate": ["javascript", "typescript"],
+	"editor.codeActionsOnSave": {
+		"source.fixAll.eslint": true,
+	},
+	"files.exclude": {
+		"**/.git": true,
+		".gitignore": true,
+		"**/.DS_Store": true,
+		"node_modules": true,
+		"dist": true,
+		".vite": true,
+		".output": true,
+		"tsconfig.json": true,
+		".eslintrc": true,
+		".vscode": true,
+		"bun.lockb": true,
+		"postcss.config.cjs": true,
+		".github": true,
+	},
+}
