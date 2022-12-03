@@ -1,4 +1,4 @@
-# Digital Advent Calender
+# Digital advent calender
 
 ![A text message that reads: "Digital advent calendra", and a reply: "what". A second reply an hour later: "Quinn what does it mean".](/thoughts/images/quinn-message.png)
 

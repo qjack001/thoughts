@@ -1,0 +1,79 @@
+---
+import Base from './base.astro'
+const { frontmatter } = Astro.props as { frontmatter?: any }
+---
+
+<Base title={frontmatter.title}>
+	<main>
+		<slot/>
+	</main>
+</Base>
+
+
+<style>
+	main
+	{
+		max-width: 60ch;
+		margin: 100px auto;
+		line-height: 1.6;
+	}
+
+	main :global(a)
+	{
+		color: var(--accent);
+	}
+
+	main :global(a:hover)
+	{
+		opacity: 0.6;
+	}
+
+	main :global(code),
+	main :global(pre code)
+	{
+		color: var(--foreground);
+		tab-size: 2;
+		font-size: 0.9em;
+		line-height: 1.6em;
+
+		display: inline-block;
+		border-radius: 8px;
+		background: rgb(0 0 0 / 10%);
+		padding: 0 0.5ch;
+		transform: translateY(-0.05em);
+	}
+
+	main :global(pre code),
+	main :global(pre code span)
+	{
+		background: transparent;
+		color: var(--foreground) !important;
+	}
+
+	main :global(pre)
+	{
+		border-radius: 8px;
+		background: rgb(0 0 0 / 10%) !important;
+		padding: 1ch;
+	}
+
+	main :global(hr)
+	{
+		background: none;
+		border: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	main :global(hr::after)
+	{
+		content: '***';
+		display: block;
+
+		font-size: 2rem;
+		line-height: 5;
+		text-align: center;
+
+		opacity: 50%;
+	}
+</style>

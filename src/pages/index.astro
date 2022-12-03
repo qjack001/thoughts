@@ -1,0 +1,13 @@
+---
+import Base from '../components/base.astro'
+
+const posts = await Astro.glob('./*.md')
+---
+
+<Base>
+	<ol>
+	{
+		posts.map(post => <li><a href={post.url}>{post.frontmatter.title}</a></li>)
+	}
+	</ol>
+</Base>
