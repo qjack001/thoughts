@@ -1,5 +1,3 @@
-<!-- start: 11 -->
-
 # What Astro gets wrong (and how to fix it)
 
 Having build dozens of Astro sites over the past couple years, I've become quite a bit
@@ -80,8 +78,8 @@ that complicated.
 ---
 
 This post also took me about an hour to write. I'm also going to add a simple homepage
-to list all the posts, but I don't have anything to really say about it. Here's [all the changes
-in today's commit]().
+to list all the posts, but I don't have anything to really say about it. Here's
+[all the changes in today's commit](https://github.com/qjack001/thoughts/commit/9e35ecd44e05410b2bbace6e4368848ab1f38bac).
 
 
 [^1]: The entirety of my VS Code sidebar, as I write this: ![A screenshot of the file tree in my IDE's sidebar. There are only 5 files visible: two config files, two markdown files, and an image.](/thoughts/images/sidebar-screenshot.png)
