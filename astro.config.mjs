@@ -1,5 +1,5 @@
 import { defineConfig } from 'astro/config'
-import { frontmatter } from './src/components/markdown/frontmatter.mjs'
+import frontmatter from './src/components/markdown/frontmatter'
 
 export default defineConfig({
 	site: 'https://guinane.xyz',
@@ -7,5 +7,6 @@ export default defineConfig({
 	markdown: {
 		remarkPlugins: [ frontmatter ],
 		extendDefaultPlugins: true,
+			linkToHeading,
 	},
 })

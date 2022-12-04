@@ -11,6 +11,7 @@
 		"astro": "^1.6.12",
 		"autoprefixer": "^10.4.13",
 		"eslint-config-goodbyte-styleguide-typescript": "^0.0.4",
+		"hast-util-to-string": "^2.0.0",
 		"unist-util-visit": "^4.1.1"
 	}
 }
