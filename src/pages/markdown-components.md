@@ -107,4 +107,4 @@ navigator.clipboard.writeText(window.location.href)
 The styling needed for the new button goes in the client-side file, giving the button an icon and
 hover state. I hide the button unless the heading is hovered as well. A no-script tag hides the
 buttons if the user does not have Javascript turned on. You can find all the code for today's
-feature [on Github]](https://github.com/qjack001/thoughts/commit/8db8571f61da7ea874e727e53e874e6f300e34e1).
+feature [on Github](https://github.com/qjack001/thoughts/commit/8db8571f61da7ea874e727e53e874e6f300e34e1).
