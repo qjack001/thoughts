@@ -41,7 +41,7 @@ const { frontmatter } = Astro.props as { frontmatter?: any }
 
 		display: inline-block;
 		border-radius: 8px;
-		background: rgb(0 0 0 / 10%);
+		background: var(--highlight);
 		padding: 0 0.5ch;
 		transform: translateY(-0.05em);
 	}
@@ -56,7 +56,7 @@ const { frontmatter } = Astro.props as { frontmatter?: any }
 	main :global(pre)
 	{
 		border-radius: 8px;
-		background: rgb(0 0 0 / 10%) !important;
+		background: var(--highlight) !important;
 		padding: 1ch;
 	}
 

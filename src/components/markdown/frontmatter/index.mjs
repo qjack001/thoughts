@@ -7,7 +7,7 @@ import { visit } from 'unist-util-visit'
 import { toString } from 'hast-util-to-string'
 
 export default function injectFrontmatter() {
-	return function (tree, file) {
+	return (tree, file) => {
 
 		file.data.astro.frontmatter.layout = '../components/post-layout.astro'
 
