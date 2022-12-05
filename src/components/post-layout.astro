@@ -1,6 +1,7 @@
 ---
 import Base from './base.astro'
 import ClientSideHeadingLinks from './markdown/link-to-heading-button/client-side.astro'
+import ClientSideHighlights from './markdown/highlight/client-side.astro'
 
 const { frontmatter } = Astro.props as { frontmatter?: any }
 ---
@@ -10,6 +11,7 @@ const { frontmatter } = Astro.props as { frontmatter?: any }
 		<slot/>
 	</main>
 	<ClientSideHeadingLinks/>
+	<ClientSideHighlights/>
 </Base>
 
 
