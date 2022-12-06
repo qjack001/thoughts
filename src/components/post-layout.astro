@@ -9,6 +9,13 @@ const { frontmatter } = Astro.props as { frontmatter?: any }
 <Base title={frontmatter.title}>
 	<main>
 		<slot/>
+		<p>
+			This post was written {new Date(frontmatter.created)}{
+				(frontmatter.created != frontmatter.lastUpdated)
+					? ` and last updated ${new Date(frontmatter.lastUpdated)}.`
+					: '.'
+			}
+		</p>
 	</main>
 	<ClientSideHeadingLinks/>
 	<ClientSideHighlights/>
