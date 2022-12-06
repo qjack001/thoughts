@@ -3,12 +3,12 @@ import Base from '../components/base.astro'
 
 const posts = await Astro.glob('./*.md')
 const byNewestFirst = (a: any, b: any) => {
-	return b.created - a.created
+	return b.frontmatter.created - a.frontmatter.created
 }
 ---
 
 <Base>
-	<ol>
+	<ol reversed>
 	{
 		posts.sort(byNewestFirst).map(post => 
 			<li>
